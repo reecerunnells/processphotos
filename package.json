@@ -1,0 +1,22 @@
+{
+  "name": "processphotos",
+  "version": "1.0.0",
+  "description": "node app that takes a directory of images and resizes them to a \"processed\" folder",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reecerunnells/processphotos.git"
+  },
+  "author": "Reece Runnells",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/reecerunnells/processphotos/issues"
+  },
+  "homepage": "https://github.com/reecerunnells/processphotos#readme",
+  "dependencies": {
+    "sharp": "^0.29.3"
+  }
+}

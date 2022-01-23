@@ -10,8 +10,10 @@ const process = require('process');
             console.log('directory created')
         });
     }
+
+    const files = await fs.promises.readdir(process.argv[2]);
     
-    await fs.promises.readdir(process.argv[2]).forEach((value) => {
+    files.forEach((value) => {
         const image = sharp(value);
         image.metadata().then((metadata) => {
             if (metadata.width > 1200) {
